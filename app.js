@@ -59,3 +59,5 @@ mongoose.connect(process.env.DB_PATH)
 .catch((err)=>{
     console.log("error while connecting to mongodb : ",err)
 })
+
+export default app;
