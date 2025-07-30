@@ -8,6 +8,7 @@
     "@tailwindcss/vite": "^4.1.11",
     "bcryptjs": "^3.0.2",
     "connect-mongodb-session": "^5.0.0",
+    "dotenv": "^17.2.1",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
     "express-session": "^1.18.1",
@@ -15,7 +16,8 @@
     "mongodb": "^6.17.0",
     "mongoose": "^8.16.3",
     "multer": "^2.0.1",
-    "mysql2": "^3.14.1"
+    "mysql2": "^3.14.1",
+    "require": "^2.4.20"
   },
   "name": "airbnb",
   "version": "1.0.0",
@@ -24,9 +26,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "tailwind": "npx @tailwindcss/cli -i ./views/input.css -o ./public/output.css --watch",
     "nodemon": "nodemon app.js",
-    "start": "concurrently \"npm run tailwind\" \"npm run nodemon\""
+    "run": "concurrently \"npm run tailwind\" \"npm run nodemon\"",
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "type": "commonjs"
 }
